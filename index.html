@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futebol Brasileiro 2026</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header-custom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo-section">
+                <div class="logo-icon">퉬</div>
+                
+                <h2 class="m-0 ms-3">Brasileirão 2026</h2>
+            </div>
+
+            <nav class="nav-menu">
+                <a href="#historia" class="nav-link">História</a>
+                <a href="#destaques" class="nav-link">Destaques</a>
+                <a href="#times" class="nav-link">Times</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container my-4">
+
+        <!-- HISTÓRIA DO BRASILEIRÃO -->
+        <section id="historia" class="mb-5 historia-section p-4 rounded">
+            <h2 class="mb-4">A História do Brasileirão</h2>
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="historia-card p-3 rounded">
+                        <h4>⚽ Origens e Fundação ⚽</h4>
+                        <p>O Campeonato Brasileiro de Futebol, conhecido como <strong>Brasileirão</strong>, é a principal liga de futebol do Brasil. Sua história começa em 1959, mas o formato moderno teve início em <strong>1971</strong>, quando se tornou o campeonato nacional único organizado pela Confederação Brasileira de Futebol (CBF).</p>
+                        <p>A competição reúne os melhores clubes brasileiros em uma disputa que dura praticamente o ano todo, atraindo milhões de torcedores e gerando grande movimentação econômica no país.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="historia-card p-3 rounded">
+                        <h4>🏆 Principais Campeões 🏆</h4>
+                        <p>Os clubes mais vitoriosos no Brasileirão são:</p>
+                        <ul class="list-unstyled">
+                            <li><strong>Palmeiras</strong> - 12 títulos</li>
+                            <li><strong>Flamengo</strong> - 8 títulos</li>
+                            <li><strong>Santos</strong> - 8 títulos</li>
+                            <li><strong>Corinthians</strong> - 7 títulos</li>
+                            <li><strong>São Paulo</strong> - 6 títulos</li>
+                            <li><strong>Cruzeiro</strong> - 4 títulos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="historia-card p-3 rounded">
+                        <h4>🏅 Formato da Competição 🏅</h4>
+                        <p>O Brasileirão adota o formato de <strong>turno e returno</strong>, onde cada time enfrenta todos os outros duas vezes (em casa e fora). O campeão é aquele que acumula maior número de pontos ao final de todos os jogos.</p>
+                        <p>Participam da elite (Série A) 20 clubes, que disputam 380 rodadas, totalizando 380 jogos na temporada.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <div class="historia-card p-3 rounded">
+                        <h4>📍 Importância Cultural 📍</h4>
+                        <p>O Brasileirão é mais do que competição esportiva — é um fenômeno cultural que mobiliza cidades inteiras. As torcidas brasileiras são conhecidas mundialmente por sua paixão, criatividade e dedicação aos seus clubes.</p>
+                        <p>A competição também é plataforma para revelação de novos talentos que depois se destacam no futebol europeu e mundial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CARROSSEL -->
+        <section id="destaques">
+            <h2 class="mb-3">Times em Destaque</h2>
+
+            <div id="carouselTimes" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" id="carousel-indicators"></div>
+                <div class="carousel-inner" id="carousel-content"></div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTimes" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTimes" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <noscript>
+                <div class="alert alert-warning mt-3">
+                    Ative o JavaScript para ver o conteúdo do carrossel e dos cards.
+                </div>
+            </noscript>
+        </section>
+
+        <!-- CARDS -->
+        <section id="times" class="mt-5">
+            <h2 class="mb-4">Todos os Times</h2>
+
+            <div id="cards-container" class="cards-grid"></div>
+        </section>
+
+        <!-- SOBRE -->
+        <section id="sobre" class="mt-5 sobre-section p-3 rounded">
+            <h2>Autoria</h2>
+
+            <div class="row justify-content-center sobre-grid gy-4">
+                <div class="col-lg-5">
+                    <div class="sobre-card p-3 rounded shadow-sm">
+                        <h3>Sobre o site</h3>
+                        <p>Este projeto apresenta os principais clubes do futebol brasileiro em 2026, usando HTML, CSS, Bootstrap e JavaScript para construir um carrossel dinâmico, cartões de destaque e uma página de detalhes para cada time.</p>
+                        <p>Os dados são renderizados a partir de um conjunto de objetos em JavaScript, deixando a página responsiva e fácil de navegar em dispositivos móveis.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="autor-card p-3 rounded shadow-sm">
+                        <div class="autor-photo-container mb-3 d-flex flex-column align-items-center">
+                            <img id="autor-photo" src="Imagens/eu.png" alt="Foto do Aluno" class="autor-photo mb-2">
+                        </div>
+                        <div class="autor-info">
+                            <ul class="list-unstyled autor-details mb-3">
+                                <li><strong>Nome do Aluno:</strong> Diogo Vieira Teodoro Ferreira</li>
+                                <li><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</li>
+                                <li><strong>Turma:</strong> Clóvis</li>
+                            </ul>
+
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/diogo-ferreira-4bb42b3b2/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" class="social-icon">
+                                </a>
+                                <a href="https://github.com/diogo-ferreira174" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" class="social-icon">
+                                </a>
+                                <a href="https://www.instagram.com/eodg_31/" target="_blank" rel="noopener noreferrer">
+                                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram" class="social-icon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer-custom mt-5">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Sobre o Projeto</h5>
+                    <p>Site interativo com informações sobre os principais clubes do Futebol Brasileiro em 2026.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Navegação Rápida</h5>
+                    <ul class="footer-links">
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#times">Times</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Redes Sociais</h5>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/eodg_31/" target="_blank" rel="noopener noreferrer" class="social-badge">IG</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Brasileirão. Desenvolvido para fins educacionais.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
